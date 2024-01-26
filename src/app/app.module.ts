@@ -9,7 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { NormalUserModule } from './normalUser/normalUser.module';
 import { AdminModule } from './admin/admin.module';
 import { AuthModule } from './auth/auth.module'
-
+import { CookieService } from 'ngx-cookie-service';
 import { JwtInterceptor, ErrorInterceptor, fakeBackendProvider } from './core/interceptors';
 
 import { AppComponent } from './app.component';
@@ -32,7 +32,7 @@ import { AppComponent } from './app.component';
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
         { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
-
+        CookieService,
         // provider used to create fake backend
         fakeBackendProvider
     ],

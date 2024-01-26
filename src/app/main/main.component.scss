@@ -1,0 +1,16 @@
+.main-panel{
+    background: url('../../assets/img/background.png');
+    background-size: cover;
+}
+::ng-deep .btn-danger .c-btn {
+    color: #e14eca !important;
+    border: 1px solid #e14eca !important;
+    background: transparent !important;
+    border-radius: 10px;
+}
+::ng-deep .btn-danger .dropdown-list .list-area li.selected-item {
+    background-color: #e14eca !important;
+}
+ .sidebar .logo .simple-text {
+     font-size: 1rem;
+ }

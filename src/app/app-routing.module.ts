@@ -1,36 +1,45 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule, PreloadAllModules,PreloadingStrategy } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
+import { AuthGuard } from './auth-guard';
 
-import { AuthGuard, Role } from './core';
+import { LoginComponent } from './login/login.component';
+import { MainComponent } from './main/main.component';
+import { DashboardComponent } from './main/dashboard/dashboard.component';
+import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
-    path: 'normalUser',
-    loadChildren: () =>
-      import('./shared/shared.module').then(
-        (m) => m.SharedModule
-      ),
-    canActivate: [AuthGuard],
-    data: { roles: [Role.User] }
-  },
-  {
-    path: 'admin',
-    loadChildren: () =>
-      import('./shared/shared.module').then(
-        (m) => m.SharedModule
-      ),
-    canActivate: [AuthGuard],
-    data: { roles: [Role.Admin] }
+    path: 'login',
+    component: LoginComponent
   },
   {
     path: '',
-    loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
+    component: MainComponent,
+    canActivate: [AuthGuard],
+    children: [ {
+      path: '',
+      redirectTo: 'dashboard',
+      pathMatch: 'full'
+    },
+    {
+      path: 'dashboard',
+      component: DashboardComponent,
+      canActivate: [AuthGuard]
+    }]
   },
-  { path: '**', redirectTo:''}
+  {
+    path: "**",
+    component: PageNotFoundComponent
+  }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    useHash: true,
+    scrollPositionRestoration: "enabled",
+    anchorScrolling: "enabled",
+    scrollOffset: [0, 64]
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -1,0 +1,39 @@
+{
+    "Routes": [
+        {
+            "path": "/dashboard",
+            "title": "Menu",
+            "type": "link",
+            "icontype": "tim-icons icon-components",
+            "rtltitle": "لوحة القيادة"
+        },
+        {
+            "path": "/demand",
+            "title": "On Demand",
+            "type": "link",
+            "icontype": "tim-icons icon-spaceship",
+            "rtltitle": "لوحة القيادة"
+        },
+        {
+            "path": "/order",
+            "title": "Orders",
+            "type": "link",
+            "icontype": "tim-icons icon-bag-16",
+            "rtltitle": "لوحة القيادة"
+        },
+        {
+            "path": "/specialRequest",
+            "title": "Special Request",
+            "type": "link",
+            "icontype": "tim-icons icon-paper",
+            "rtltitle": "لوحة القيادة"
+        },
+        {
+            "path": "/profile",
+            "title": "profile",
+            "type": "link",
+            "icontype": "tim-icons icon-single-02",
+            "rtltitle": "لوحة القيادة"
+        }
+    ]
+}

@@ -1,0 +1,158 @@
+<div class="full-page login-page ">
+  <div class=" container">
+    <div class=" col-lg-5 col-md-6 ml-auto mr-auto ">
+      <div class="row justify-content-center" style="padding-top:80px;padding-bottom: 20px;">
+        <img alt="" class="center-logo" src="assets/img/logo.svg" width="30%"/>
+      </div>
+      <div class=" card card-register p-10">
+        <mat-tab-group mat-stretch-tabs (focusChange)="onTabChange($event)" [active]="activeTab" [disableRipple]="true"
+          dynamicHeight>
+          <mat-tab label="Email Login" [active]="'Email Login'== activeTab">
+            <form class=" form example-container" id="LoginValidation" [formGroup]="loginEForm">
+              <div class=" card-email">
+                <div class=" text-center text-white">
+                  <h1 class=" card-title text-white"> Email Login</h1>
+                </div>
+                <div class=" card-body">
+                  <div class=" row">
+                    <mat-form-field class=" col-md-12 form-group" appearance="legacy">
+
+                      <mat-label>Email</mat-label>
+                      <input type="email" matInput pattern='^[a-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,3}$'
+                        formControlName="email" (focus)="focus1 = true; focus1Touched = true" (blur)="focus1 = false"
+                        required>
+                      <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
+                      <mat-error class="error d-block" *ngIf="loginEF.email.errors?.required">Email is required.
+                      </mat-error>
+                      <mat-error class="error d-block" *ngIf="
+                   (loginEF.email.errors?.pattern)
+                  ">This email is not validate.</mat-error>
+                      <mat-error class="error" *ngIf="((focus1Touched || login) && InvalidEmailId) ">Invalid Email
+                        ID.</mat-error>
+                    </mat-form-field>
+                  </div>
+                  <div class=" row">
+                    <mat-form-field class=" col-md-12 form-group" appearance="legacy">
+
+                      <mat-label>Password</mat-label>
+                      <input type="password" matInput formControlName="password"  (keyup.enter)="onLogin(0)" (focus)="focus2Touched = true"
+                        minlength="1" maxlength="10" Placeholder="Enter password" required>
+                      <mat-error class="error"
+                        *ngIf="(focus2Touched || login) && loginEForm.controls['password'].errors?.required">Please
+                        Enter a password.</mat-error>
+                    </mat-form-field>
+                  </div>
+                  <div class="forgot-pass mb-4" style="align-items:end;float:right" routerLink="/forgot-password">
+                    Forgot password?
+                  </div>
+                </div>
+                <div class=" card-footer">
+                  <button class="btn-fill btn-lg btn-block mb-3 text-white"
+                    style="background-color:#FD8332 !important;border-radius: unset !important;border:none;font-weight: 700;" type="button"
+                    (click)="onLogin(0)">
+                    Login
+                  </button>
+                  <div style="text-align: center !important;" class=" row justify-content-center">
+                    By Creating an account you agree to our <b><a
+                        [href]="TCCP_HOST_URL+'roleId=%2540%25235%2540%2523&type=%2523%25401%2523%2540'"
+                        class="text-info cursor" target="_blank">Terms and Conditions</a></b>
+                    &nbsp; and &nbsp; <b><a
+                        [href]="TCCP_HOST_URL+'roleId=%2540%25235%2540%2523&type=%2523%25402%2523%2540'"
+                        class="text-info cursor" target="_blank">Privacy Policy</a></b>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </mat-tab>
+          <mat-tab label="Mobile Login" [active]="'Mobile Login'==activeTab">
+            <form class=" form" id="LoginValidation" [formGroup]="loginForm">
+              <div class=" card-email ">
+                <div class="card-header">
+                  <h1 class=" card-title text-center text-white"> {{ OTPRequired ? 'OTP Verification' :'Enter Mobile Number' }}</h1>
+                  <span class=" card-register-subtitle text-center text-white" *ngIf="!OTPRequired">
+                    We will send you an <span class="card-highlight">One Time password</span>
+                    <span class=" card-center">on this Mobile Number.</span>
+                  </span>
+                </div>
+                <div class=" card-body">
+                  <div class=" row">
+                    <mat-form-field class=" col-md-12 form-group" *ngIf="!OTPRequired" appearance="legacy">
+                      <mat-label>Country</mat-label>
+                      <mat-select formControlName="country_code" placeholder="Country">
+                        <mat-option *ngFor="let country of countries_array" [value]="country.id"
+                          [selected]="country.id=='+1'">
+                          {{country.id}}
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class=" row">
+                    <mat-form-field class=" col-md-12 form-group" *ngIf="!OTPRequired" appearance="legacy">
+                      <mat-label>Mobile No</mat-label>
+                      <input type="text" matInput formControlName="mobile_no" (keyup.enter)="onLogin(0)" maxlength="14" minlength="10"
+                        (focus)="focus2Touched = true" (blur)="focus1 = false" required>
+                      <mat-error class="error"
+                        *ngIf=" (focus2Touched || login) && loginForm.controls['mobile_no'].errors?.pattern">Please
+                        enter digit only.</mat-error>
+                      <mat-error class="error" class="error"
+                        *ngIf="(focus2Touched || login) && loginForm.controls['mobile_no'].errors?.required">Please
+                        Enter a mobile Number.</mat-error>
+                      <mat-error class="error" *ngIf=" (focus2Touched || login) && (loginForm.controls['mobile_no'].errors?.minlength ||
+                         loginForm.controls['mobile_no'].errors?.maxlength)">Please enter 10 to 14 digit only.
+                      </mat-error>
+                    </mat-form-field>
+                  </div>
+                  <div class=" row" *ngIf="OTPRequired">
+                    <mat-form-field class=" col-md-12 form-group" appearance="legacy">
+                      <mat-label>OTP</mat-label>
+                      <input type="password" autocomplete="off" matInput formControlName="otp" maxlength="4"
+                        (keyup)="otpChange($event)" (keyup.enter)="onLogin(0)" title="Otp in 4 digit required." (focus)="focus2Touched = true"
+                        (blur)="focus1 = false" required>
+                      <mat-error class="error"
+                        *ngIf="(focus3Touched || login) && loginForm.controls['otp'].errors?.required">Please enter an
+                        OTP.</mat-error>
+                      <mat-error class="error"
+                        *ngIf=" (focus3Touched || login) && loginForm.controls['otp'].errors?.pattern">
+                        Please enter only digit.</mat-error>
+                      <mat-error class="error" *ngIf=" (focus2Touched || login) && (loginForm.controls['mobile_no'].errors?.minlength ||
+                         loginForm.controls['mobile_no'].errors?.maxlength)">Please enter 10 to 14 digit only.
+                      </mat-error>
+                      <mat-error class="error" *ngIf="OTPRequiredError!=''">{{OTPRequiredError}}</mat-error>
+                    </mat-form-field>
+                    <div *ngIf="OTPRequired" class=" card-register-subtitle mt-1 ml-3"> Don't receive the OTP ? <span
+                        class="card-highlight" (click)="isResendOtp && onLogin(3)">RESEND </span>
+                      <span class="card-highlight" *ngIf="!isResendOtp">
+                        <app-countdown-timer [interval]="interval" (onComplete)="!isResendOtp && completed($event)">
+                        </app-countdown-timer>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class=" card-footer">
+                  <button class=" btn-fill  btn-lg btn-block mb-3 text-white"
+                    style="background-color:#FD8332 !important;border-radius: unset !important;border:none !important;font-weight: 700;" type="button"
+                    (click)="onLogin(0)">
+                    {{ OTPRequired ? 'Verify OTP' :'GET OTP' }}
+                  </button>
+                  <div class="row">
+                    <div class=" col-md-12 form-group" *ngIf="!OTPRequired">
+                      <div class=" row justify-content-center">
+                        By Creating an account you agree to our <b><a
+                            [href]="TCCP_HOST_URL+'roleId=%2540%25235%2540%2523&type=%2523%25401%2523%2540'"
+                            class="text-info cursor" target="_blank">Terms and Conditions</a></b>
+                        &nbsp; and &nbsp; <b>
+                          <a [href]="TCCP_HOST_URL+'roleId=%2540%25235%2540%2523&type=%2523%25402%2523%2540'"
+                            class="text-info cursor" target="_blank">Privacy Policy</a></b>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+    </div>
+  </div>
+</div>

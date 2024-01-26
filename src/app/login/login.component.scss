@@ -1,0 +1,365 @@
+.center-logo {
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  /* // position: absolute;
+    // top: 0;
+    // bottom:100;
+    // transform: translateX(42%); */
+
+}
+.card {
+  margin-bottom: 0px !important; 
+}
+
+
+::ng-deep .mat-tab-group {
+  color: white !important;
+  margin-bottom: 48px;
+}
+
+.bgActive1 {
+  color: #fff !important;
+  opacity: 1;
+}
+
+.bgActive2 {
+  color: #fff !important;
+  opacity: 1;
+}
+
+.forgot-pass {
+  color: #007bff;
+  cursor: pointer;
+  font-size: 15px;
+}
+.mat-tab-group.mat-primary {
+  color: white !important;
+}
+::ng-deep .mat-tab-group.mat-primary .mat-tab-label:not(.mat-tab-disabled):focus, .mat-tab-group.mat-primary .mat-tab-link:not(.mat-tab-disabled):focus, .mat-tab-nav-bar.mat-primary .mat-tab-label:not(.mat-tab-disabled):focus, .mat-tab-nav-bar.mat-primary .mat-tab-link:not(.mat-tab-disabled):focus{
+  color: white !important;
+}
+::ng-deep .mat-tab-group {
+   margin-bottom: 0px !important; 
+}
+::ng-deep .mat-ink-bar {
+  background-color:#fc661f !important; //#ee2925 !important;
+}
+
+.error {
+  color: red !important;
+}
+
+.card-center1 {
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  /* // display: flex; */
+}
+.card form label + .form-control {
+  margin-bottom: 0px !important;
+}
+.card-center {
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.card-register .card-footer {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+.has-success:after, .has-danger:after {
+  top: 12px;
+}
+
+.country-class {
+  width: 100%;
+}
+
+.p-40 {
+  padding: 40px;
+}
+.p-20{
+  padding: 15px;
+}
+.p-10{
+  padding: 10px;
+}
+button:focus{
+  outline: none !important;
+  border: none !important;
+}
+button:active{
+  outline: none !important;
+  border: none !important;
+}
+.card-highlight {
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.btn-lg,
+.btn-group-lg>.btn {
+  border-radius: 1.4285rem;
+}
+
+.center {
+  vertical-align: middle;
+  position: relative;
+  left: 0;
+  transform: translateX(28%);
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+.login-page .card-register {
+  // background: #1717172e; //#1f2251;
+  // opacity: 0.9;
+  // border-radius: 1.2857rem;
+  background: hsl(0deg 0% 17% / 55%);
+  opacity: 0.9;
+  border-radius: 1.2857rem;
+  padding: 20px 20px;
+}
+
+element.style {
+  transform-origin: 50% 20.875px 0px;
+  font-size: 14px;
+  opacity: 1;
+  min-width: calc(100% + 32px);
+  transform: scaleY(1);
+}
+.mat-select-panel {
+  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+}
+.mat-select-panel {
+  min-width: 112px;
+  max-width: 280px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-top: 0;
+  padding-bottom: 0;
+  max-height: 256px;
+  min-width: 100%;
+  border-radius: 4px;
+  outline: 0;
+}
+.mat-select-panel {
+  background: #393939;
+}
+.card-email{
+  // background: #17171700;
+  // opacity: 0.9;
+  // border-radius: 1.2857rem;
+  background: transparent;
+  opacity: 0.9;
+  border-radius: 1.2857rem;
+  padding: 20px 20px;
+}
+
+.card-header {
+  padding: 0;
+}
+
+.login-page .card-register .card-header .card-register-subtitle {
+  font-size: 0.8rem;
+  /* //1.01rem; */
+  align-items: center;
+  justify-content: center;
+  margin-left: 13%;
+  color: #ffffff;
+  /* // padding: 0px 63px;
+    // display: flex; */
+}
+
+.login-page .card-register .card-header .card-title {
+  font-size: 2em;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #ffffff;
+  margin-top: 0.6rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.full-page.login-page {
+  min-height: 100vh;
+  background: url('../../assets/img/login_background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* (320x480) iPhone (Original, 3G, 3GS) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+  /* insert styles here */
+  .full-page>.content {
+    padding-bottom: 130px;
+    padding-top: 100px;
+    padding-right: 0px;
+  }
+
+  .center {
+    transform: translateX(18%);
+  }
+
+  .p-40 {
+    padding: 17px;
+  }
+
+  .login-page .card-register .card-header .card-register-subtitle {
+    margin-left: 2%;
+  }
+
+  .login-page .card-register .card-header .card-title {
+    font-size: 1em;
+  }
+}
+
+/* (320x480) Smartphone, Portrait */
+@media only screen and (device-width: 320px) and (orientation: portrait) {
+
+  /* insert styles here */
+  .full-page>.content {
+    padding-bottom: 130px;
+    padding-top: 100px;
+    padding-right: 0px;
+  }
+
+  .center {
+    transform: translateX(50%);
+    width: 50%;
+  }
+
+  .p-40 {
+    padding: 17px;
+  }
+
+  .login-page .card-register .card-header .card-register-subtitle {
+    margin-left: 2%;
+  }
+
+  .login-page .card-register .card-header .card-title {
+    font-size: 1em;
+  }
+}
+
+/* (320x480) Smartphone, Landscape */
+@media only screen and (device-width: 480px) and (orientation: landscape) {
+
+  /* insert styles here */
+  .full-page>.content {
+    padding-bottom: 130px;
+    padding-top: 100px;
+    padding-right: 0px;
+  }
+
+  .center {
+    transform: translateX(10%);
+  }
+
+  .p-40 {
+    padding: 17px;
+  }
+
+  .login-page .card-register .card-header .card-register-subtitle {
+    margin-left: 2%;
+  }
+
+  .login-page .card-register .card-header .card-title {
+    font-size: 1em;
+  }
+}
+
+/* (480x800) Android */
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) {
+
+  /* insert styles here */
+  .full-page>.content {
+    padding-bottom: 130px;
+    padding-top: 100px;
+    padding-right: 0px;
+  }
+
+  .center {
+    transform: translateX(18%);
+  }
+
+  .p-40 {
+    padding: 17px;
+  }
+
+  .login-page .card-register .card-header .card-register-subtitle {
+    margin-left: 2%;
+  }
+
+  .login-page .card-register .card-header .card-title {
+    font-size: 1em;
+  }
+}
+
+
+/* (1024x768) iPad 1 & 2, XGA */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* insert styles here */
+}
+
+/* (768x1024) iPad 1 & 2, Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* insert styles here */
+}
+
+/* (1024x768) iPad 1 & 2, Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* insert styles here */
+}
+
+/* (2048x1536) iPad 3 */
+@media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) {
+  /* insert styles here */
+}
+
+/* (1280x720) Galaxy Note 2, WXGA */
+@media only screen and (min-device-width: 720px) and (max-device-width: 1280px) {
+  /* insert styles here */
+}
+
+/* (1366x768) WXGA Display */
+@media screen and (max-width: 1366px) {
+  /* insert styles here */
+}
+
+/* (1280x1024) SXGA Display */
+@media screen and (max-width: 1280px) {
+  /* insert styles here */
+}
+
+/* (1440x900) WXGA+ Display */
+@media screen and (max-width: 1440px) {
+  /* insert styles here */
+}
+
+/* (1680x1050) WSXGA+ Display */
+@media screen and (max-width: 1680px) {
+  /* insert styles here */
+}
+
+/* (1920x1080) Full HD Display */
+@media screen and (max-width: 1920px) {
+  /* insert styles here */
+}
+
+/* (1600x900) HD+ Display */
+@media screen and (max-width: 1600px) {
+  /* insert styles here */
+}

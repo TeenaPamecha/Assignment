@@ -1,0 +1,18 @@
+{
+    "ProfileMenus": [
+        {
+            "title": "Personal Details",
+            "description":"Description about personal details come here.",
+            "class": "card-primary",
+            "borderClass":"border-left-primary",
+            "icontype": "assets/img/placeholder.jpg"
+        },
+        {
+            "title": "Availablility Settings",
+            "description":" Description about availablility settings come here.",
+            "class": "card-info",
+            "borderClass":"border-left-info",
+            "icontype": "tim-icons icon-calendar-60"
+        }
+    ]
+}

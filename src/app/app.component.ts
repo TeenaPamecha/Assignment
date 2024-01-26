@@ -1,17 +1,19 @@
-﻿import { Component } from '@angular/core';
+import { Component } from '@angular/core';
+import { AuthenticationService } from './services/authentication.service';
 
-import { AuthenticationService } from './core/services';
-import { User, Role } from './core/models';
-
-@Component({ selector: 'app', templateUrl: 'app.component.html' })
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
 export class AppComponent {
-    user: User;
+  title = 'chef-admin';
+  
 
-    constructor(private authenticationService: AuthenticationService) {
-        this.authenticationService.user.subscribe(x => this.user = x);
-    }
+  constructor(private authenticationService : AuthenticationService){
 
-    logout() {
-        this.authenticationService.logout();
-    }
+  }
+  ngOnInit() {
+    this.authenticationService.autoLogin();
+  }
 }

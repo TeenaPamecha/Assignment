@@ -1,0 +1,11 @@
+{
+    "name": "Chef Admin",
+    "short_name": "Chef",
+    "icons": [{
+          "src": "assets/img/logo.png",
+          "size": "16X16",
+          "type": "image/png"
+        }],
+    "start_url": "./",
+    "gcm_sender_id": "794503710473"
+}

@@ -1,0 +1,87 @@
+// /* Add a black background color to the top navigation */
+// .topnav {
+//     position: relative;
+//     background-color: #333;
+//     overflow: hidden;
+// }
+.card-register{
+    // background: #1f2251;
+    background-color: transparent !important;
+    box-shadow: 0 1px 20px 0px rgb(0 0 0 / 10%) !important;
+    opacity: 0.8;
+    border-radius: 1.2857rem;
+  }
+  .card-map{
+    height: 350px;
+  }
+  .fw-7{
+    font-weight: 700;
+  }
+  .card-body1{
+    height: 200px !important;
+  }
+  .card-register .card-header1 .card-title {
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #ffffff;
+    margin-top: 0.6rem;
+    text-transform:capitalize;
+    background-color: transparent !important;
+  }
+  .container-fluid1{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 100vh;
+    background: url('../../../assets/img/background.png');
+    background-size: cover;
+  }
+  agm-map {
+    height: 300px;
+  }
+  .notDisplay{
+    display:none;
+  }
+  .btn-finish{
+    display: block;
+  }
+  .error{
+    color:red;
+  }
+  .center {
+    left: 50%;
+    -webkit-transform: none;
+    transform: none;
+  }
+  .card-wizard .info-text {
+    color:#fff;
+  }
+  .card-body, .card-footer{
+    // background: #1f2251  !important;
+    background-color:transparent !important;
+    opacity: 0.8;
+    // border-radius: 1.2857rem;
+  }
+    /* Style the links inside the navigation bar */
+  nav{
+        width:100%;
+        display: flex;
+  }
+  .w-50{
+      width:39% !important;
+  }
+  .navbar-wrapper{
+    position: relative;
+    top: 0px;
+    left: 32%;
+  }
+  .navbar .navbar-brand {
+      text-transform: none;
+  }
+  .container{
+      margin-top: 7%;
+  }

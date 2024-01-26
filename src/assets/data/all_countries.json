@@ -1,0 +1,948 @@
+{
+    "Countries": [
+      {
+        "id": "+7 840",
+        "itemName": "Abkhazia"
+      },
+      {
+        "id": "+93",
+        "itemName": "Afghanistan"
+      },
+      {
+        "id": "+355",
+        "itemName": "Albania"
+      },
+      {
+        "id": "+213",
+        "itemName": "Algeria"
+      },
+      {
+        "id": "+1 684",
+        "itemName": "American Samoa"
+      },
+      {
+        "id": "+376",
+        "itemName": "Andorra"
+      },
+      {
+        "id": "+244",
+        "itemName": "Angola"
+      },
+      {
+        "id": "+1 264",
+        "itemName": "Anguilla"
+      },
+      {
+        "id": "+1 268",
+        "itemName": "Antigua and Barbuda"
+      },
+      {
+        "id": "+54",
+        "itemName": "Argentina"
+      },
+      {
+        "id": "+374",
+        "itemName": "Armenia"
+      },
+      {
+        "id": "+297",
+        "itemName": "Aruba"
+      },
+      {
+        "id": "+247",
+        "itemName": "Ascension"
+      },
+      {
+        "id": "+61",
+        "itemName": "Australia"
+      },
+      {
+        "id": "+672",
+        "itemName": "Australian External Territories"
+      },
+      {
+        "id": "+43",
+        "itemName": "Austria"
+      },
+      {
+        "id": "+994",
+        "itemName": "Azerbaijan"
+      },
+      {
+        "id": "+1 242",
+        "itemName": "Bahamas"
+      },
+      {
+        "id": "+973",
+        "itemName": "Bahrain"
+      },
+      {
+        "id": "+880",
+        "itemName": "Bangladesh"
+      },
+      {
+        "id": "+1 246",
+        "itemName": "Barbados"
+      },
+      {
+        "id": "+1 268",
+        "itemName": "Barbuda"
+      },
+      {
+        "id": "+375",
+        "itemName": "Belarus"
+      },
+      {
+        "id": "+32",
+        "itemName": "Belgium"
+      },
+      {
+        "id": "+501",
+        "itemName": "Belize"
+      },
+      {
+        "id": "+229",
+        "itemName": "Benin"
+      },
+      {
+        "id": "+1 441",
+        "itemName": "Bermuda"
+      },
+      {
+        "id": "+975",
+        "itemName": "Bhutan"
+      },
+      {
+        "id": "+591",
+        "itemName": "Bolivia"
+      },
+      {
+        "id": "+387",
+        "itemName": "Bosnia and Herzegovina"
+      },
+      {
+        "id": "+267",
+        "itemName": "Botswana"
+      },
+      {
+        "id": "+55",
+        "itemName": "Brazil"
+      },
+      {
+        "id": "+246",
+        "itemName": "British Indian Ocean Territory"
+      },
+      {
+        "id": "+1 284",
+        "itemName": "British Virgin Islands"
+      },
+      {
+        "id": "+673",
+        "itemName": "Brunei"
+      },
+      {
+        "id": "+359",
+        "itemName": "Bulgaria"
+      },
+      {
+        "id": "+226",
+        "itemName": "Burkina Faso"
+      },
+      {
+        "id": "+257",
+        "itemName": "Burundi"
+      },
+      {
+        "id": "+855",
+        "itemName": "Cambodia"
+      },
+      {
+        "id": "+237",
+        "itemName": "Cameroon"
+      },
+      {
+        "id": "+1",
+        "itemName": "Canada"
+      },
+      {
+        "id": "+238",
+        "itemName": "Cape Verde"
+      },
+      {
+        "id": "+ 345",
+        "itemName": "Cayman Islands"
+      },
+      {
+        "id": "+236",
+        "itemName": "Central African Republic"
+      },
+      {
+        "id": "+235",
+        "itemName": "Chad"
+      },
+      {
+        "id": "+56",
+        "itemName": "Chile"
+      },
+      {
+        "id": "+86",
+        "itemName": "China"
+      },
+      {
+        "id": "+61",
+        "itemName": "Christmas Island"
+      },
+      {
+        "id": "+61",
+        "itemName": "Cocos-Keeling Islands"
+      },
+      {
+        "id": "+57",
+        "itemName": "Colombia"
+      },
+      {
+        "id": "+269",
+        "itemName": "Comoros"
+      },
+      {
+        "id": "+242",
+        "itemName": "Congo"
+      },
+      {
+        "id": "+243",
+        "itemName": "Congo, Dem. Rep. of (Zaire)"
+      },
+      {
+        "id": "+682",
+        "itemName": "Cook Islands"
+      },
+      {
+        "id": "+506",
+        "itemName": "Costa Rica"
+      },
+      {
+        "id": "+385",
+        "itemName": "Croatia"
+      },
+      {
+        "id": "+53",
+        "itemName": "Cuba"
+      },
+      {
+        "id": "+599",
+        "itemName": "Curacao"
+      },
+      {
+        "id": "+537",
+        "itemName": "Cyprus"
+      },
+      {
+        "id": "+420",
+        "itemName": "Czech Republic"
+      },
+      {
+        "id": "+45",
+        "itemName": "Denmark"
+      },
+      {
+        "id": "+246",
+        "itemName": "Diego Garcia"
+      },
+      {
+        "id": "+253",
+        "itemName": "Djibouti"
+      },
+      {
+        "id": "+1 767",
+        "itemName": "Dominica"
+      },
+      {
+        "id": "+1 809",
+        "itemName": "Dominican Republic"
+      },
+      {
+        "id": "+670",
+        "itemName": "East Timor"
+      },
+      {
+        "id": "+56",
+        "itemName": "Easter Island"
+      },
+      {
+        "id": "+593",
+        "itemName": "Ecuador"
+      },
+      {
+        "id": "+20",
+        "itemName": "Egypt"
+      },
+      {
+        "id": "+503",
+        "itemName": "El Salvador"
+      },
+      {
+        "id": "+240",
+        "itemName": "Equatorial Guinea"
+      },
+      {
+        "id": "+291",
+        "itemName": "Eritrea"
+      },
+      {
+        "id": "+372",
+        "itemName": "Estonia"
+      },
+      {
+        "id": "+251",
+        "itemName": "Ethiopia"
+      },
+      {
+        "id": "+500",
+        "itemName": "Falkland Islands"
+      },
+      {
+        "id": "+298",
+        "itemName": "Faroe Islands"
+      },
+      {
+        "id": "+679",
+        "itemName": "Fiji"
+      },
+      {
+        "id": "+358",
+        "itemName": "Finland"
+      },
+      {
+        "id": "+33",
+        "itemName": "France"
+      },
+      {
+        "id": "+596",
+        "itemName": "French Antilles"
+      },
+      {
+        "id": "+594",
+        "itemName": "French Guiana"
+      },
+      {
+        "id": "+689",
+        "itemName": "French Polynesia"
+      },
+      {
+        "id": "+241",
+        "itemName": "Gabon"
+      },
+      {
+        "id": "+220",
+        "itemName": "Gambia"
+      },
+      {
+        "id": "+995",
+        "itemName": "Georgia"
+      },
+      {
+        "id": "+49",
+        "itemName": "Germany"
+      },
+      {
+        "id": "+233",
+        "itemName": "Ghana"
+      },
+      {
+        "id": "+350",
+        "itemName": "Gibraltar"
+      },
+      {
+        "id": "+30",
+        "itemName": "Greece"
+      },
+      {
+        "id": "+299",
+        "itemName": "Greenland"
+      },
+      {
+        "id": "+1 473",
+        "itemName": "Grenada"
+      },
+      {
+        "id": "+590",
+        "itemName": "Guadeloupe"
+      },
+      {
+        "id": "+1 671",
+        "itemName": "Guam"
+      },
+      {
+        "id": "+502",
+        "itemName": "Guatemala"
+      },
+      {
+        "id": "+224",
+        "itemName": "Guinea"
+      },
+      {
+        "id": "+245",
+        "itemName": "Guinea-Bissau"
+      },
+      {
+        "id": "+595",
+        "itemName": "Guyana"
+      },
+      {
+        "id": "+509",
+        "itemName": "Haiti"
+      },
+      {
+        "id": "+504",
+        "itemName": "Honduras"
+      },
+      {
+        "id": "+852",
+        "itemName": "Hong Kong SAR China"
+      },
+      {
+        "id": "+36",
+        "itemName": "Hungary"
+      },
+      {
+        "id": "+354",
+        "itemName": "Iceland"
+      },
+      {
+        "id": "+91",
+        "itemName": "India"
+      },
+      {
+        "id": "+62",
+        "itemName": "Indonesia"
+      },
+      {
+        "id": "+98",
+        "itemName": "Iran"
+      },
+      {
+        "id": "+964",
+        "itemName": "Iraq"
+      },
+      {
+        "id": "+353",
+        "itemName": "Ireland"
+      },
+      {
+        "id": "+972",
+        "itemName": "Israel"
+      },
+      {
+        "id": "+39",
+        "itemName": "Italy"
+      },
+      {
+        "id": "+225",
+        "itemName": "Ivory Coast"
+      },
+      {
+        "id": "+1 876",
+        "itemName": "Jamaica"
+      },
+      {
+        "id": "+81",
+        "itemName": "Japan"
+      },
+      {
+        "id": "+962",
+        "itemName": "Jordan"
+      },
+      {
+        "id": "+7 7",
+        "itemName": "Kazakhstan"
+      },
+      {
+        "id": "+254",
+        "itemName": "Kenya"
+      },
+      {
+        "id": "+686",
+        "itemName": "Kiribati"
+      },
+      {
+        "id": "+965",
+        "itemName": "Kuwait"
+      },
+      {
+        "id": "+996",
+        "itemName": "Kyrgyzstan"
+      },
+      {
+        "id": "+856",
+        "itemName": "Laos"
+      },
+      {
+        "id": "+371",
+        "itemName": "Latvia"
+      },
+      {
+        "id": "+961",
+        "itemName": "Lebanon"
+      },
+      {
+        "id": "+266",
+        "itemName": "Lesotho"
+      },
+      {
+        "id": "+231",
+        "itemName": "Liberia"
+      },
+      {
+        "id": "+218",
+        "itemName": "Libya"
+      },
+      {
+        "id": "+423",
+        "itemName": "Liechtenstein"
+      },
+      {
+        "id": "+370",
+        "itemName": "Lithuania"
+      },
+      {
+        "id": "+352",
+        "itemName": "Luxembourg"
+      },
+      {
+        "id": "+853",
+        "itemName": "Macau SAR China"
+      },
+      {
+        "id": "+389",
+        "itemName": "Macedonia"
+      },
+      {
+        "id": "+261",
+        "itemName": "Madagascar"
+      },
+      {
+        "id": "+265",
+        "itemName": "Malawi"
+      },
+      {
+        "id": "+60",
+        "itemName": "Malaysia"
+      },
+      {
+        "id": "+960",
+        "itemName": "Maldives"
+      },
+      {
+        "id": "+223",
+        "itemName": "Mali"
+      },
+      {
+        "id": "+356",
+        "itemName": "Malta"
+      },
+      {
+        "id": "+692",
+        "itemName": "Marshall Islands"
+      },
+      {
+        "id": "+596",
+        "itemName": "Martinique"
+      },
+      {
+        "id": "+222",
+        "itemName": "Mauritania"
+      },
+      {
+        "id": "+230",
+        "itemName": "Mauritius"
+      },
+      {
+        "id": "+262",
+        "itemName": "Mayotte"
+      },
+      {
+        "id": "+52",
+        "itemName": "Mexico"
+      },
+      {
+        "id": "+691",
+        "itemName": "Micronesia"
+      },
+      {
+        "id": "+1 808",
+        "itemName": "Midway Island"
+      },
+      {
+        "id": "+373",
+        "itemName": "Moldova"
+      },
+      {
+        "id": "+377",
+        "itemName": "Monaco"
+      },
+      {
+        "id": "+976",
+        "itemName": "Mongolia"
+      },
+      {
+        "id": "+382",
+        "itemName": "Montenegro"
+      },
+      {
+        "id": "+1664",
+        "itemName": "Montserrat"
+      },
+      {
+        "id": "+212",
+        "itemName": "Morocco"
+      },
+      {
+        "id": "+95",
+        "itemName": "Myanmar"
+      },
+      {
+        "id": "+264",
+        "itemName": "Namibia"
+      },
+      {
+        "id": "+674",
+        "itemName": "Nauru"
+      },
+      {
+        "id": "+977",
+        "itemName": "Nepal"
+      },
+      {
+        "id": "+31",
+        "itemName": "Netherlands"
+      },
+      {
+        "id": "+599",
+        "itemName": "Netherlands Antilles"
+      },
+      {
+        "id": "+1 869",
+        "itemName": "Nevis"
+      },
+      {
+        "id": "+687",
+        "itemName": "New Caledonia"
+      },
+      {
+        "id": "+64",
+        "itemName": "New Zealand"
+      },
+      {
+        "id": "+505",
+        "itemName": "Nicaragua"
+      },
+      {
+        "id": "+227",
+        "itemName": "Niger"
+      },
+      {
+        "id": "+234",
+        "itemName": "Nigeria"
+      },
+      {
+        "id": "+683",
+        "itemName": "Niue"
+      },
+      {
+        "id": "+672",
+        "itemName": "Norfolk Island"
+      },
+      {
+        "id": "+850",
+        "itemName": "North Korea"
+      },
+      {
+        "id": "+1 670",
+        "itemName": "Northern Mariana Islands"
+      },
+      {
+        "id": "+47",
+        "itemName": "Norway"
+      },
+      {
+        "id": "+968",
+        "itemName": "Oman"
+      },
+      {
+        "id": "+92",
+        "itemName": "Pakistan"
+      },
+      {
+        "id": "+680",
+        "itemName": "Palau"
+      },
+      {
+        "id": "+970",
+        "itemName": "Palestinian Territory"
+      },
+      {
+        "id": "+507",
+        "itemName": "Panama"
+      },
+      {
+        "id": "+675",
+        "itemName": "Papua New Guinea"
+      },
+      {
+        "id": "+595",
+        "itemName": "Paraguay"
+      },
+      {
+        "id": "+51",
+        "itemName": "Peru"
+      },
+      {
+        "id": "+63",
+        "itemName": "Philippines"
+      },
+      {
+        "id": "+48",
+        "itemName": "Poland"
+      },
+      {
+        "id": "+351",
+        "itemName": "Portugal"
+      },
+      {
+        "id": "+1 787",
+        "itemName": "Puerto Rico"
+      },
+      {
+        "id": "+974",
+        "itemName": "Qatar"
+      },
+      {
+        "id": "+262",
+        "itemName": "Reunion"
+      },
+      {
+        "id": "+40",
+        "itemName": "Romania"
+      },
+      {
+        "id": "+7",
+        "itemName": "Russia"
+      },
+      {
+        "id": "+250",
+        "itemName": "Rwanda"
+      },
+      {
+        "id": "+685",
+        "itemName": "Samoa"
+      },
+      {
+        "id": "+378",
+        "itemName": "San Marino"
+      },
+      {
+        "id": "+966",
+        "itemName": "Saudi Arabia"
+      },
+      {
+        "id": "+221",
+        "itemName": "Senegal"
+      },
+      {
+        "id": "+381",
+        "itemName": "Serbia"
+      },
+      {
+        "id": "+248",
+        "itemName": "Seychelles"
+      },
+      {
+        "id": "+232",
+        "itemName": "Sierra Leone"
+      },
+      {
+        "id": "+65",
+        "itemName": "Singapore"
+      },
+      {
+        "id": "+421",
+        "itemName": "Slovakia"
+      },
+      {
+        "id": "+386",
+        "itemName": "Slovenia"
+      },
+      {
+        "id": "+677",
+        "itemName": "Solomon Islands"
+      },
+      {
+        "id": "+27",
+        "itemName": "South Africa"
+      },
+      {
+        "id": "+500",
+        "itemName": "South Georgia and the South Sandwich Islands"
+      },
+      {
+        "id": "+82",
+        "itemName": "South Korea"
+      },
+      {
+        "id": "+34",
+        "itemName": "Spain"
+      },
+      {
+        "id": "+94",
+        "itemName": "Sri Lanka"
+      },
+      {
+        "id": "+249",
+        "itemName": "Sudan"
+      },
+      {
+        "id": "+597",
+        "itemName": "Suriname"
+      },
+      {
+        "id": "+268",
+        "itemName": "Swaziland"
+      },
+      {
+        "id": "+46",
+        "itemName": "Sweden"
+      },
+      {
+        "id": "+41",
+        "itemName": "Switzerland"
+      },
+      {
+        "id": "+963",
+        "itemName": "Syria"
+      },
+      {
+        "id": "+886",
+        "itemName": "Taiwan"
+      },
+      {
+        "id": "+992",
+        "itemName": "Tajikistan"
+      },
+      {
+        "id": "+255",
+        "itemName": "Tanzania"
+      },
+      {
+        "id": "+66",
+        "itemName": "Thailand"
+      },
+      {
+        "id": "+670",
+        "itemName": "Timor Leste"
+      },
+      {
+        "id": "+228",
+        "itemName": "Togo"
+      },
+      {
+        "id": "+690",
+        "itemName": "Tokelau"
+      },
+      {
+        "id": "+676",
+        "itemName": "Tonga"
+      },
+      {
+        "id": "+1 868",
+        "itemName": "Trinidad and Tobago"
+      },
+      {
+        "id": "+216",
+        "itemName": "Tunisia"
+      },
+      {
+        "id": "+90",
+        "itemName": "Turkey"
+      },
+      {
+        "id": "+993",
+        "itemName": "Turkmenistan"
+      },
+      {
+        "id": "+1 649",
+        "itemName": "Turks and Caicos Islands"
+      },
+      {
+        "id": "+688",
+        "itemName": "Tuvalu"
+      },
+      {
+        "id": "+1 340",
+        "itemName": "U.S. Virgin Islands"
+      },
+      {
+        "id": "+256",
+        "itemName": "Uganda"
+      },
+      {
+        "id": "+380",
+        "itemName": "Ukraine"
+      },
+      {
+        "id": "+971",
+        "itemName": "United Arab Emirates"
+      },
+      {
+        "id": "+44",
+        "itemName": "United Kingdom"
+      },
+      {
+        "id": "+1",
+        "itemName": "United States"
+      },
+      {
+        "id": "+598",
+        "itemName": "Uruguay"
+      },
+      {
+        "id": "+998",
+        "itemName": "Uzbekistan"
+      },
+      {
+        "id": "+678",
+        "itemName": "Vanuatu"
+      },
+      {
+        "id": "+58",
+        "itemName": "Venezuela"
+      },
+      {
+        "id": "+84",
+        "itemName": "Vietnam"
+      },
+      {
+        "id": "+1 808",
+        "itemName": "Wake Island"
+      },
+      {
+        "id": "+681",
+        "itemName": "Wallis and Futuna"
+      },
+      {
+        "id": "+967",
+        "itemName": "Yemen"
+      },
+      {
+        "id": "+260",
+        "itemName": "Zambia"
+      },
+      {
+        "id": "+255",
+        "itemName": "Zanzibar"
+      },
+      {
+        "id": "+263",
+        "itemName": "Zimbabwe"
+      }
+    ]
+  }

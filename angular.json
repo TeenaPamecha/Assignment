@@ -4,31 +4,40 @@
   "newProjectRoot": "projects",
   "projects": {
     "assignment": {
-      "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "less"
-        }
-      },
       "root": "",
       "sourceRoot": "src",
+      "projectType": "application",
       "prefix": "app",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist",
+            "outputPath": "dist/assignment",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.app.json",
-            "aot": true,
+            "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/firebase-messaging-sw.js",
+              "src/manifest.json"
             ],
             "styles": [
-              "src/styles.less"
+              "src/styles.scss",
+              "src/assets/css/nucleo-icons.css",
+              "src/assets/demo/demo.css",
+              "node_modules/bs-stepper/dist/css/bs-stepper.css",
+              "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "src/assets/scss/black-dashboard.scss",
+              "node_modules/@swimlane/ngx-datatable/index.css",
+              "node_modules/@swimlane/ngx-datatable/assets/icons.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": []
           },
@@ -45,6 +54,7 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
+              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -52,12 +62,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
+                  "maximumError": "6mb"
                 }
               ]
             }
@@ -85,43 +90,46 @@
           "options": {
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
+            "tsConfig": "src/tsconfig.spec.json",
+            "karmaConfig": "src/karma.conf.js",
+            "styles": [
+              "src/styles.scss",
+              "src/assets/css/nucleo-icons.css",
+              "src/assets/demo/demo.css",
+              "node_modules/angular2-multiselect-dropdown-lib/themes/default.theme.scss",
+              "node_modules/bs-stepper/dist/css/bs-stepper.css",
+              "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "src/assets/scss/black-dashboard.scss",
+              "node_modules/@swimlane/ngx-datatable/index.css",
+              "node_modules/@swimlane/ngx-datatable/assets/icons.css",
+              "node_modules/ngx-toastr/toastr.css"
+            ],
+            "scripts": [],
             "assets": [
               "src/favicon.ico",
               "src/assets"
-            ],
-            "styles": [
-              "src/styles.less"
-            ],
-            "scripts": []
+            ]
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:nglint",
+          "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "no-conflicting-lifecycle": true,
-            "no-host-metadata-property": true,
-            "no-input-rename": true,
-            "no-inputs-metadata-property": true,
-            "no-output-native": true,
-            "no-output-on-prefix": true,
-            "no-output-rename": true,
-            "no-outputs-metadata-property": true,
-            "template-banana-in-box": true,
-            "template-no-negated-async": true,
-            "use-lifecycle-interface": true,
-            "use-pipe-transform-interface": true,
             "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
+              "src/tsconfig.app.json",
+              "src/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
             ]
           }
-        },
+        }
+      }
+    },
+    "assignment-e2e": {
+      "root": "e2e/",
+      "projectType": "application",
+      "prefix": "",
+      "architect": {
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
@@ -133,8 +141,21 @@
               "devServerTarget": "assignment:serve:production"
             }
           }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
         }
       }
-    }},
-  "defaultProject": "assignment-project"
+    }
+  },
+  "defaultProject": "assignment",
+  "cli": {
+    "analytics": false
+  }
 }
